@@ -1,0 +1,62 @@
+// TARGETING ALL THE ELEMENTS 
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+p {
+   color: $transparent-white;
+   font-family: $font-lexend;
+   font-size: $body-copy;
+   line-height: 1.8rem;
+}
+
+h2 {
+   color: $very-light-gray;
+   text-transform: uppercase;
+   font-family: $font-big-shoulder;
+   font-weight: $bold-weight;
+   font-size: calc($body-copy + 20px);
+}
+
+.learn-sec {
+   background-color: $very-light-gray;
+   font-size: $body-copy;
+   font-family: $font-lexend;
+   padding-left: 15%;
+   padding-right: 15%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   margin: auto 0 0 0;
+   width: max-content;
+   border-radius: 25px;
+}
+
+// LEARN MORE DIV FONT COLOR
+#sedan-learn {
+   color: $bright-orange;
+}
+
+#suv-learn {
+   color: $dark-cyan;
+}
+
+#luxury-learn {
+   color: $very-dark-cyan;
+}
+
+
+.attribution {
+   position: bottom;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   margin: auto;
+   text-align: center;
+   font-family: $font-lexend;
+   font-size: $body-copy;
+   & a {
+      font-family: $font-big-shoulder;
+   }
+}
