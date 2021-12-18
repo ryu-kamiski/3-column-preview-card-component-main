@@ -5,6 +5,10 @@
    box-sizing: border-box;
 }
 
+html,body{
+   height: 100%;
+}
+
 p {
    color: $transparent-white;
    font-family: $font-lexend;
@@ -31,32 +35,48 @@ h2 {
    margin: auto 0 0 0;
    width: max-content;
    border-radius: 25px;
+
+   &:hover{
+      cursor: pointer;
+      background-color: inherit;
+      outline: solid 2px $transparent-white;
+   }
 }
 
 // LEARN MORE DIV FONT COLOR
 #sedan-learn {
    color: $bright-orange;
+
+   &:hover{
+      color: $transparent-white;
+   }
 }
 
 #suv-learn {
    color: $dark-cyan;
+
+   &:hover{
+      color: $transparent-white;
+   }
 }
 
 #luxury-learn {
    color: $very-dark-cyan;
+
+   &:hover{
+      color: $transparent-white;
+   }
 }
 
-
-.attribution {
-   position: bottom;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   margin: auto;
-   text-align: center;
+.footer-content {
+   padding-top: 50px;
+   font-size: calc($body-copy - 2px);
    font-family: $font-lexend;
-   font-size: $body-copy;
-   & a {
+   text-align: center;
+
+
+   & a{
+      text-decoration: none;
       font-family: $font-big-shoulder;
    }
 }
