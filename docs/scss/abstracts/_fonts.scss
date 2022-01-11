@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca:wght@400;700&display=swap');
+
+$font-size: 0.9375rem;
+
+$font-lexend: 'Lexend Deca', sans-serif;
+$font-big-shoulders: 'Big Shoulders Display', sans-serif;
+$font-weight: (
+  normal: 400,
+  bold: 700
+);
+
+@function font-family($font-name) {
+  @return map-get($font-family, $font-name);
+}
+
+@function weight($weight-name) {
+  @return map-get($font-weight, $weight-name);
+}

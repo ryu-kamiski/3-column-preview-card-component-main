@@ -1,0 +1,44 @@
+@use 'resets/resets';
+@use 'abstracts';
+@use 'components';
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {    // h1 hidden
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+.card__content {
+  width: min(80%, 25em);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.footer {
+  display: block;
+  margin-top: 1.5em;
+  text-align: center;
+  font-size: calc(abstracts.$font-size - 2px);
+  & a {
+    text-decoration: none;
+    color: abstracts.$primary-dark-cyan;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+    &::selection {
+      color: abstracts.$neutral-light-gray;
+      background-color: abstracts.$primary-orange;
+    }
+  }
+  &::selection {
+    color: abstracts.$neutral-light-gray;
+    background-color: abstracts.$primary-dark-cyan;
+  }
+}

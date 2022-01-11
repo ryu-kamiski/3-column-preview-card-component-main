@@ -1,0 +1,65 @@
+@use '../abstracts/fonts';
+@use '../abstracts/colors';
+
+// Different icons
+.icon-sedan {
+  width: 4.0625rem;
+  height: 2.5rem;
+  background-image: url(../img/icon-sedans.svg);
+}
+.icon-suv {
+  width: 4.0625rem;
+  height: 2.5rem;
+  background-image: url(../img/icon-suvs.svg);
+}
+.icon-luxury {
+  width: 4.0625rem;
+  height: 2.5rem;
+  background-image: url(../img/icon-luxury.svg);
+}
+
+.card {
+  .card__content {
+    &:first-child {
+      background-color: colors.$primary-orange;
+    }
+    &:nth-child(2) {
+      background-color: colors.$primary-dark-cyan;
+    }
+    &:last-child {
+      background-color: colors.$primary-very-dark-cyan;
+    }
+  }
+
+}
+
+.card__content {
+  padding: 3.2em;
+
+  h2 {
+    margin-top: 1.2em;
+    text-transform: uppercase;
+    font-size: 2.125rem;
+    font-weight: weight(bold);
+    font-family: fonts.$font-big-shoulders;
+    color: colors.$neutral-light-gray;
+  }
+
+  p {
+    margin-top: 0.75em;
+    font-size: calc(fonts.$font-size + 1px);
+    font-weight: weight(normal);
+    font-family: fonts.$font-lexend;
+    color: colors.$neutral-transparent-white;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 2.5em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 100px;
+    font-family: fonts.$font-lexend;
+    background-color: colors.$neutral-light-gray;
+  }
+}

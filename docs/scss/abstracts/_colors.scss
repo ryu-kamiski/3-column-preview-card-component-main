@@ -1,0 +1,35 @@
+
+$primary-orange: hsl(31, 77%, 52%);
+$primary-dark-cyan: hsl(184, 100%, 22%);
+$primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+$neutral-transparent-white: hsla(0, 0%, 100%, .75); //* paragraphs
+$neutral-light-gray: hsl(0, 0%, 95%); //* bg, headings & buttons
+
+.btn-orange {
+  color: $primary-orange;
+
+  &:hover {
+    color: $neutral-light-gray;
+    background-color: $primary-orange;
+    outline: 1px solid $neutral-light-gray;
+  }
+}
+.btn-dark-cyan {
+  color: $primary-dark-cyan;
+
+  &:hover {
+    color: $neutral-light-gray;
+    background-color: $primary-dark-cyan;
+    outline: 1px solid $neutral-light-gray;
+  }
+}
+.btn-very-dark-cyan {
+  color: $primary-very-dark-cyan;
+
+  &:hover {
+    color: $neutral-light-gray;
+    background-color: $primary-very-dark-cyan;
+    outline: 1px solid $neutral-light-gray;
+  }
+}
